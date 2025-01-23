@@ -8,6 +8,14 @@
   const textElement = document.querySelector('.text');
   
   let index = 0;
+
+
+
+
+
+
+
+  
   function typeMessage() {
     let message = messages[index];
     textElement.textContent = "";
