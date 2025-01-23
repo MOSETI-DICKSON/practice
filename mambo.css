@@ -1,0 +1,179 @@
+/*@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-100px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .myPapa{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    animation: bounce 2s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+  }
+    */
+    .myPapa {
+        width: 100px;
+        height: 100px;
+        background-color: teal;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: rotateCube 3s infinite linear;
+      }
+      
+      @keyframes rotateCube {
+        0% {
+          transform: rotateX(0deg) rotateY(0deg);
+        }
+        50% {
+          transform: rotateX(180deg) rotateY(180deg);
+        }
+        100% {
+          transform: rotateX(360deg) rotateY(360deg);
+        }
+      }
+        
+       
+        @keyframes morph {
+            0% {
+              clip-path: circle(50% at 50% 50%);
+            }
+            50% {
+              clip-path: ellipse(75% 50% at 50% 50%);
+            }
+            100% {
+              clip-path: circle(50% at 50% 50%);
+            }
+          }
+          
+          .myPapa {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            animation: morph 4s infinite ease-in-out;
+          }
+            
+           
+                
+                :root {
+                    --animation-duration: 3s;
+                    --animation-color: #ff6347;
+                  }
+                  
+                  .myPapa {
+                    margin-top: 67px;
+                    margin-left: 67px;
+                    width: 100px;
+                    height: 100px;
+                    background-color: var(--animation-color);
+                    animation: spin var(--animation-duration) infinite linear;
+                  }
+                  
+                  @keyframes spin {
+                    from {
+                      transform: rotate(0deg);
+                    }
+                    to {
+                      transform: rotate(360deg);
+                    }
+                  }
+                    
+
+                    @keyframes typing {
+                        from {
+                          width: 0;
+                        }
+                        to {
+                          width: 100%;
+                        }
+                      }
+                      
+                      @keyframes blink {
+                        from {
+                          border-color: transparent;
+                        }
+                        to {
+                          border-color: black;
+                        }
+                      }
+                      
+                      .myPapa {
+                        font-family: monospace;
+                        font-size: 2em;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        width: 0;
+                        border-right: 2px solid black;
+                        animation: typing 4s steps(20, end), blink 0.5s step-end infinite alternate;
+                      }
+                      
+
+                      /* Base styles */
+
+
+.myPapa{
+    font-family: monospace;
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden; /* Ensures text stays within bounds during animation */
+    border-right: 2px solid black; /* Blinking cursor */
+    width: 24ch; /* Width matches the longest text */
+    animation: blink 0.5s step-end infinite alternate;
+  }
+  
+  .myPapa {
+    display: inline-block;
+    overflow: hidden;
+    animation: typing 4s steps(24, end) infinite, erase 4s steps(24, end) 4s infinite;
+  }
+  
+  /* Typing animation */
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 24ch; /* Adjust to match the number of characters */
+    
+  
+
+  /* Erase animation */
+  @keyframes erase {
+    from {
+      width: 24ch;
+    }
+    to {
+      width: 0;
+    }
+  }
+  
+   
+  @keyframes blink {
+    from {
+      border-color: transparent;
+    }
+    to {
+      border-color: black;
+    }
+  }
+
+
+                  
+                  
+
+
+  
+

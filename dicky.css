@@ -1,0 +1,115 @@
+section {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    justify-content: center;
+    border: 5px solid black;
+    color: green;
+    background-color:grey;
+}
+#dicky {
+    color: blue;
+    font-family: Arial;
+    font-size: 20px;
+
+}
+.moseti {
+    color: navy;
+    font-size: 25px;
+}
+.jasper{
+    font-family: Arial;
+    font-size: 20px;
+    color: black;
+}
+html {
+    background-color: black;
+    font-size: 70%;
+
+}
+body{
+    border: 5px;
+  background-color: lawngreen;
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  
+  
+}
+p h1 {
+    color: cyan;
+    font-weight: 400;
+    font-size: large;
+    font-family: Arial;
+
+}
+a   {
+    color: green;
+}
+a[href="http//facebook.com"] {
+    color: black;
+}
+button {
+    width: 200px;
+    height: 50px;
+    background-color: blueviolet;
+    font-size:24px;
+}
+
+button:hover{
+    background-color: cyan;
+}
+@media (min-width: 600px) {
+    body {
+        background-color: lawngreen;
+
+    }
+}
+
+@media (max-width: 599px) {
+    body {
+        background-color:orange;
+        width: 95%;
+    }
+}
+ footer{
+    color:white;
+    font-size: 1.7rem;
+    font-family: Arial;
+    border: 2px solid black;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color:black ;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    footer {
+        font-size: 1rem;
+    }
+}
+.joan {
+    color: navy;
+    font-family: Arial;
+    font-size: 23px;
+}
+.kaite {
+    font-family: Arial;
+    font-size: 20px;
+    color:black
+}
+strong {
+    font-size: 20px;
+}
+
+
